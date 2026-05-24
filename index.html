@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Anniversary</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background-glow"></div>
+<div class="particles" id="particles"></div>
+<div class="flash" id="flash"></div>
+
+<audio id="bgMusic" loop>
+  <source src="assets/audio/music.mp3" type="audio/mp3">
+</audio>
+
+<audio id="clickSound">
+  <source src="assets/audio/click.mp3" type="audio/mp3">
+</audio>
+
+<audio id="unlockSound">
+  <source src="assets/audio/unlock.mp3" type="audio/mp3">
+</audio>
+
+<audio id="burstSound">
+  <source src="assets/audio/burst.mp3" type="audio/mp3">
+</audio>
+
+<main class="scene" id="scene">
+
+  <div class="hero-text">
+    <h1>Hallo Sandy</h1>
+    <p>
+      Masukkan kode rahasia untuk membuka hadiah spesial.
+    </p>
+  </div>
+
+  <div class="gift-wrap" id="giftWrap">
+
+    <div class="badge" id="badge">
+      locked
+    </div>
+
+    <img
+      src="assets/images/KotakKado.png"
+      class="gift-image"
+      id="giftImage"
+      alt="Gift Box"
+    />
+
+    <div class="gift-glow"></div>
+
+  </div>
+
+  <section class="pin-panel">
+
+    <div class="pin-display" id="pinDisplay">
+      _ _ _ _ _ _
+    </div>
+
+    <div class="keypad" id="keypad">
+
+      <button class="key" data-key="1">1</button>
+      <button class="key" data-key="2">2</button>
+      <button class="key" data-key="3">3</button>
+
+      <button class="key" data-key="4">4</button>
+      <button class="key" data-key="5">5</button>
+      <button class="key" data-key="6">6</button>
+
+      <button class="key" data-key="7">7</button>
+      <button class="key" data-key="8">8</button>
+      <button class="key" data-key="9">9</button>
+
+      <button class="key clear" data-action="clear">⌫</button>
+      <button class="key" data-key="0">0</button>
+      <button class="key enter" data-action="enter">↵</button>
+
+    </div>
+
+  </section>
+
+  </main>
+
+ <section class="message" id="message">
+
+  <img
+    src="assets/images/teks-aniv.png"
+    class="full-letter"
+    alt="Anniversary Letter"
+  >
+
+  <button class="next-button" id="nextButton">
+    Lanjut ❤️
+  </button>
+
+</section>
+
+<section class="video-scene" id="videoScene">
+  <h1>Video Memory</h1>
+
+  <div class="video-container">
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video1.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video2.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video3.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video4.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video5.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video6.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video7.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video8.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video9.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video10.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video11.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video12.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video13.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video14.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video15.mp4" type="video/mp4">
+    </video>
+
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="assets/video/video16.mp4" type="video/mp4">
+    </video>
+
+    <button class="final-button" id="finalButton">
+      Pesan Terakhir ❤️
+    </button>
+
+  </div>
+
+</section>
+
+<section class="final-scene" id="finalScene">
+
+  <div class="final-text">
+
+    <h1 class="animated-final">
+
+      <span>H</span>
+      <span>A</span>
+      <span>P</span>
+      <span>P</span>
+      <span>Y</span>
+
+      <span class="space"></span>
+
+      <span>A</span>
+      <span>N</span>
+      <span>N</span>
+      <span>I</span>
+      <span>V</span>
+      <span>E</span>
+      <span>R</span>
+      <span>S</span>
+      <span>A</span>
+      <span>R</span>
+      <span>Y</span>
+
+      <span>❤️</span>
+
+    </h1>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
