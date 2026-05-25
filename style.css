@@ -13,7 +13,8 @@
 
 body{
   min-height:100vh;
-  overflow:hidden;
+  overflow-x:hidden;
+  overflow-y:auto;
   font-family:'Inter',sans-serif;
 
   background:
@@ -42,6 +43,10 @@ body{
   flex-direction:column;
   align-items:center;
   gap:22px;
+}
+
+html{
+  scroll-behavior:smooth;
 }
 
 .hero-text{
